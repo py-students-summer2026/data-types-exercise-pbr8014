@@ -12,6 +12,10 @@ def calculate_profit():
     The output should match the format of the following examples: "Profit: $690.00" for sales of $3,000, or "Profit: $2,300.00" for sales of $10,000, etc.
     """
 
+    sales = float(input("Enter the amount of projected sales."))
+    profit = sales * 0.23
+    print(f"Profit: ${profit:0.2f}")
+
 
 def calculate_quotient_and_remainder():
     """
@@ -23,6 +27,9 @@ def calculate_quotient_and_remainder():
       2 goes into 5 a total of 2 times with a remainder of 1
     """
 
+    x = int(input("Give me an integer."))
+    y = int(input("Give me another integer."))
+    print(x, "goes into", y, "a total of", x // y, "times with a remainder of", x % y)
 
 def calculate_miles_per_gallon():
     """
@@ -35,6 +42,10 @@ def calculate_miles_per_gallon():
       Gas used (gallons): 25
       Miles per gallon: 2.2
     """
+
+    miles = float(input("How many miles were driven?"))
+    gallons = float(input("How many gallons of gas were used?"))
+    print("Miles per gallon:", miles / gallons)
 
 
 def align_text():
@@ -53,3 +64,11 @@ def align_text():
       Price #2: $   10.00
       Price #3: $ 9532.60
     """
+
+    a = float(input("Enter a price value."))
+    b = float(input("Enter another price value."))
+    c = float(input("Enter a third price value."))
+    print("Here are your prices!")
+    print(f"{a:>15.2f}")
+    print(f"{b:>15.2f}")
+    print(f"{c:>15.2f}")
